@@ -1,44 +1,49 @@
 
+//https://github.com/shamimacse/Assignment-3
+
 // this program is - kilometerToMeter 
 
 
-function kilometerToMeter(kilometer){
+function kilometerToMeter(kilometer)
+{
     var meter = 1000 * kilometer;
     return meter;
 }
-var result = kilometerToMeter(30);
-console.log(result);
+var convertResult = kilometerToMeter(50);
+
+
+
 
 
 
 // this program is - budgetCalculator
 
-
-
-
-function budgetCalculator(watch, phone, laptop) {
+function budgetCalculator(watch, phone, laptop)
+ {
     var watchPrice = 50 * watch,
     phonePrice = 100 * phone,
     laptopPrice = 500 * laptop,
     totalPrice = watchPrice + phonePrice + laptopPrice;
     return totalPrice;
 }
-var result = budgetCalculator(1, 3, 5);
-console.log(result);
+var totalPrice = budgetCalculator(1, 3, 5);
+
+
+
 
 
 
 // this program is - hotelCost
 
-
-
-function hotelCost(days){
+function hotelCost(days)
+{
 
     if(days <= 10){
         var cost =days * 100;
     }
     
-    else if (days <=20){
+    else if (days <=20)
+    {
         var firstDay =10 *100;
         var remaining =days -10;
         var secendDay = remaining * 80 ;
@@ -54,15 +59,19 @@ function hotelCost(days){
     return cost;
     }
    
-    var result = hotelCost(12);
-console.log(result);
+    var totalCost = hotelCost(12);
+
+
+
+
 
 
 
 // this program is - megaFriend 
 
+function megaFriend(name) 
+{
 
-function megaFriend(name) {
     var largestName = name[0];
     for( var i = 0; i <name.length; i++){
      var index = name[i];
@@ -73,4 +82,3 @@ function megaFriend(name) {
 return largestName; 
 }
 var friendResult = megaFriend(['nilufa', 'shema', 'misi']);
-console.log(friendResult);
